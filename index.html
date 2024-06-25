@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Penjumlahan Matriks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Penjumlahan Matriks Bagus Triyadi</h1>
+        
+        <div class="selector">
+            <label for="order">Pilih ordo matriks:</label>
+            <select id="order" onchange="ubahOrdo()">
+                <option value="2x2">2x2</option>
+                <option value="3x3">3x3</option>
+            </select>
+        </div>
+        
+        <h2>Matriks A</h2>
+        <div class="matrix" id="matrixA"></div>
+        
+        <h2>Matriks B</h2>
+        <div class="matrix" id="matrixB"></div>
+        
+        <button onclick="hitungJumlah()">Hitung Jumlah</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
